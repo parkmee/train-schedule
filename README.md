@@ -4,4 +4,4 @@ This application store train information on a Firebase server to host arrival an
 
 Functions:
 - enter train name, destination, first train time (military time), and frequency in minutes
-- the information for the trains by chronological time of arrival will show
+- the information for the trains will display in the table

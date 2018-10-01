@@ -17,8 +17,8 @@
 </head>
 
 <body class="w-100 h-100 bg">
-    <div class="row">
-        <header class="page-title-box ml-4 col-12">
+    <div class="row ml-4">
+        <header class="page-title-box col-12">
             <h1 class="page-title train"><i class="fas fa-subway"></i> Train</h1>
             <h1 class="page-title schedule">Schedule</h1>
         </header>
@@ -36,10 +36,10 @@
                         <label for="destination">Train Destination</label>
                         <input type="text" class="form-control form-control-lg entry" id="destination" placeholder="enter city/town">
                         <label for="train-start">First Train (HH:mm Military Time)</label>
-                        <input type="text" class="form-control form-control-lg entry" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}"
+                        <input type="text" class="form-control form-control-lg entry" placeholder="00:00" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}"
                             min="00:00" max="23:59" id="train-start">
                         <label for="train-freq">Frequency (min)</label>
-                        <input type="number" class="form-control form-control-lg entry" id="train-freq">
+                        <input type="number" class="form-control form-control-lg entry" id="train-freq" placeholder="0">
                         <button type="submit" class="btn btn-dark" id="submit">Add Train</button>
                     </div>
                 </form>

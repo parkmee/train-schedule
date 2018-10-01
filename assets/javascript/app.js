@@ -13,12 +13,14 @@ $(document).ready(function(){
 
     const db = firebase.database();
 
+    // Set initial variables
     var trainName = "";
     var destination = "";
     var trainStart = "";
     var trainFreq = "";
-    var minAway = 0;
+    var trainDetails = [];
     
+    // On click of submit button, store input values to cloud storage
     $("#submit").on("click", function () {
     
         trainName = $("#train-name").val().trim();
@@ -31,11 +33,11 @@ $(document).ready(function(){
             destination,
             trainStart,
             trainFreq,
-            minAway,
             dateAdded: firebase.database.ServerValue.TIMESTAMP
         });
     });
-    
+
+    // On addition of value to cloud storage, calculate next arrival and minutes away and populate train schedule table
     db.ref('train-schedule').on("child_added", function(childSnapshot){
         const sv = childSnapshot.val();
         
