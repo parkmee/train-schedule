@@ -18,7 +18,6 @@ $(document).ready(function(){
     var destination = "";
     var trainStart = "";
     var trainFreq = "";
-    var trainDetails = [];
     
     // On click of submit button, store input values to cloud storage
     $("#submit").on("click", function () {
