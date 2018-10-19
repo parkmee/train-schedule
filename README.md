@@ -3,7 +3,7 @@ This application stores information about a train (name, destination, time of fi
 
 ## Getting Started
 
-Click start to begin the game. Answer each question before the time runs out. Your scores will be tallied at the end of the game!
+Enter train data to add it to the schedule. The current schedule will show all trains information stored to the Firebase cloud server, along with the calculated time of next arrival.
 
 ## Built With
 
